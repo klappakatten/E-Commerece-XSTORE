@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adminstyle.css">
+    <link rel="stylesheet" href="css/cartstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Shoppingcart</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.php" id="logolink"><img src="icons/logo.png" alt="Xstore logotype" id="logo"></a>
+        </header>
+        <div id="spacer"></div>
+
+        <main>
+            <h1 id="title">Shopping Cart</h1>
+            <section>
+                <h1 id="itemtitle">Items</h1>
+                <h1><!--EMPTY1--></h1>
+                <h3 class="error"><!--EMPTY2--></h3>
+                <!--item-->
+                <article class="itemgrid" id="ITEMID">
+                    <img src="icons/stockimage.png" alt="NAME">
+                    <p class="gridname">NAME</p>
+                    <p class="gridstock">Stock (999)</p>
+                    <div id="plusminus">
+                        <input type="number" min="1" max="999" value="998" readonly id="qtyty">
+                        <a href="shoppingcart.php?itemNo=ITEMID&plus=true">+</a>
+                        <a href="shoppingcart.php?itemNo=ITEMID&minus=true">-</a>
+                    </div>
+                    <p class="kr">PRICE kr</p>
+                    <a href="shoppingcart.php?removeID=ITEMID" class="error">remove </a>
+                    <hr class="linebreak">
+                </article>
+                <!--item-->
+            </section>
+            <!--SUM-->
+            <section>
+                <h3>Sum: SUM kr</h3>
+                <h3>Tax (25%): TOTALTAX kr</h3>
+                <h3>Delivery fee: DELIVERYFEE kr</h3>
+                <h1>Total: TOTALSUM kr</h1>
+            </section>
+            <!--SUM-->
+            <hr>
+
+            <section id="paypalimg">
+                <!--PAYPAL-->
+            </section>
+
+        </main>
+    </div>
+</body>

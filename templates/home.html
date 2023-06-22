@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Store</title>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <a href="index.php" id="logolink"><img src="icons/logo.png" alt="Xstore logotype" id="logo"></a>
+            <section id="login">
+                <article><a href="LOGINLINK" class="TEMPCLASS"><img src="icons/login.png" alt="Account">Account</a>
+                </article>
+                <article><a href="shoppingcart.php" class="TEMPCART"><img src="icons/shoppingcart.png"
+                            alt="Shoppingcart"> Cart</a>
+                </article>
+            </section>
+        </header>
+        <div id="spacer"></div>
+        <Nav>
+            <h1>Categories</h1>
+            <ul id="navlist">
+                <!--nav-->
+                <li><img src="IMGSRC" alt="Icon of NAME" class="icon"> <a
+                        href="index.php?category=CATEGORYNAME">CATEGORYNAME</a></li>
+                <!--nav-->
+            </ul>
+        </Nav>
+        <main>
+            <h1 id="producttitle">Products</h1>
+            <div id="itemscontainer">
+                <!--item-->
+                <article>
+                    <img src="icons/stockimage.png" alt="Image of NAME" width="400" height="350">
+                    <h3>NAME</h3>
+                    <p>DESCRIPTION</p>
+                    <div id="price">
+                        <p>PRICE kr</p>
+                        <p id="quant">Stock (QUANTITY) </p>
+                        <a href="index.php?category=CATGORY&addtocart=true&id=ITEMID">BUY</a>
+                    </div>
+                </article>
+                <!--item-->
+                <p class="missingproduct"><!--MISSINGPRODUCT--></p>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            Copyright &copy; XSTORE
+        </footer>
+    </div>
+</body>
+</html>

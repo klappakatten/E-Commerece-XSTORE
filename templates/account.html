@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registerstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Account</title>
+</head>
+<body>
+    <header>
+        <a href="index.php" id="logolink"><img src="icons/logo.png" alt="Xstore logotype" id="logo"></a>
+    </header>
+    <div id="spacerr"></div>
+    <div id="container">
+        <div id="head">
+            <h1>My Account</h1>
+        </div>
+        <form action="account.php" method="post">
+            <fieldset>
+                <legend>Delivery Information</legend>
+                <input name="fname" id="fname" type="text" pattern="[a-zA-Z\.\-\+ äöüÄÖÜ]*" required
+                    placeholder="First Name" value="FNAME" disabled>
+                <input name="lname" id="lname" type="text" pattern="[a-zA-Z\.\-\+ äöüÄÖÜ]*" required
+                    placeholder="Last Name" value="LNAME" disabled>
+                <input name="adress" id="adress" type="text" pattern="[a-zA-Z0-9\.\-\+ äöüÄÖÜ]*" required
+                    placeholder="Adress" value="ADRESS">
+                <input name="postcode" id="postcode" type="number" required placeholder="Postcode" class="span1"
+                    value="18432" min="0">
+                <input name="city" id="city" type="text" required placeholder="City" class="span1" value="CITY">
+                <span><label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="SE">Sweden</option>
+                        <option value="DK">Denmark</option>
+                        <option value="NO">Norway</option>
+                        <option value="FI">Finland</option>
+                        <option value="IS">Iceland</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="DE">Germany</option>
+                        <option value="US">USA</option>
+                    </select>
+                </span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email</legend>
+                <input name="email" id="email" type="email" required placeholder="Email" value="EMAIL" disabled>
+                <input name="repeatemail" id="repeatemail" type="email" required placeholder="Repeat Email"
+                    value="EMAIL" disabled>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mobile Number</legend>
+                <input name="phone" id="phone" type="tel" pattern="[0-9]{6,14}" required placeholder="Mobile Number"
+                    value="0739758810">
+            </fieldset>
+
+            <fieldset>
+                <legend>Password</legend>
+                <input name="password" id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Atleast one uppercase character, one number and 8 characters required"
+                    placeholder="Choose Password">
+                <input name="repeatpassword" title="repeatpassword" id="repeatpassword" type="password"
+                    placeholder="Repeat Password">
+            </fieldset>
+            <button type="submit">Update</button>
+            <br>
+            <p class="error"><!--ERROR--></p>
+            <p class="success"><!--SUCCESS--></p>
+            <br>
+            <a id="logout" href="logout.php">Log Out</a>
+        </form>
+        <!--END-->
+    </div>

@@ -1,0 +1,158 @@
+.itemgrid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 50px);
+  align-items: center;
+}
+
+img {
+  width: 250px;
+  grid-row: 2/6;
+}
+
+hr {
+  width: 90%;
+  grid-column: 1/11;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 50px;
+  margin: auto;
+  grid-row: 1/7;
+  grid-column: 6/7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+a {
+  color: red !important;
+  grid-row: 4/7;
+}
+
+h3 {
+  text-align: center;
+}
+
+.gridname {
+  grid-row: 1/7;
+  grid-column: 2/5;
+}
+
+.gridstock {
+  grid-row: 3/5;
+  grid-column: 5/6;
+}
+
+.error {
+  grid-row: 1/7;
+  grid-column: 10/11;
+}
+
+.kr {
+  grid-row: 1/7;
+  grid-column: 8/10;
+  color: lightgreen;
+}
+
+#plusminus {
+  grid-column: 6/7;
+  grid-row: 3/5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#plusminus * {
+  margin-left: 0.5em;
+}
+
+#plusminus a {
+  margin-left: 0.5em;
+  background-color: #626262;
+  color: white !important;
+  width: 20px;
+  padding: 6px;
+  text-align: center;
+}
+
+input {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 200px;
+}
+
+label {
+  margin-top: 1em;
+}
+
+#center {
+  text-align: center;
+}
+
+#center > :first-child {
+  width: 90px;
+}
+
+#center * {
+  display: inline;
+  width: 60px;
+}
+
+.linebreak {
+  width: 80%;
+  height: 1px;
+  border-color: rgb(63, 61, 61);
+}
+
+#paypalimg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  padding-bottom: 25px;
+}
+
+#qtyty {
+  width: 40px !important;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .itemgrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemgrid * {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  img {
+    margin: auto;
+  }
+  .kr {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+
+  .error {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 1200px;
+  }
+}

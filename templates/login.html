@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registerstyle.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.php" id="logolink"><img src="icons/logo.png" alt="Xstore logotype" id="logo"></a>
+    </header>
+
+    <div id="spacer"></div>
+
+    <main class="dropshadow">
+        <h1>Sign in</h1>
+        <form action="login.php" method="post">
+            <fieldset>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="text">
+                <label for="email">Password</label>
+                <input name="password" id="password" type="password">
+                <Button type="submit">Continue</Button>
+            </fieldset>
+        </form>
+        <a href="register.php" id="createnewaccount">Create new account</a>
+        <p class="error"><!--ERROR--></p>
+        <div id="bottomspacer"></div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Copyright &copy; XSTORE</p>
+    </footer>
+
+</body>
+</html>

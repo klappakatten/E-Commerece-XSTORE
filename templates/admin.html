@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adminstyle.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Admin</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.php" id="logolink"><img src="icons/logo.png" alt="Xstore logotype" id="logo"></a>
+        </header>
+        <div id="spacer"></div>
+
+        <main>
+            <h1 id="title">Administrator page</h1>
+            <section>
+                <h1>Sales</h1>
+                <p class="sales">Sales today: SALESDAY</p>
+                <p>Sales last 7 days: SALESWEEK</p>
+                <p>Sales last 30 days: SALESMONTH</p>
+                <p>Sales lifetime: SALESLIFE</p>
+            </section>
+            <hr>
+            <section>
+                <h1>Add new Category</h1>
+                <form action="admin.php" method="post">
+                    <label for="categoryname">Category</label>
+                    <input type="text" id="categoryname" name="categoryname" placeholder="name" required>
+                    <label for="categoryimage">Image</label>
+                    <input type="text" name="categoryimage" id="categoryimage" placeholder="filepath">
+                    <label for="categorydescription">description</label>
+                    <textarea name="categorydescription" id="categorydescription" rows="8" cols="50"
+                        placeholder="optional description"></textarea>
+                    <button type="submit">Add new category</button>
+                </form>
+                <p><!--addcategoryfeedback--></p>
+            </section>
+            <hr>
+            <section>
+                <h1>Add new Item</h1>
+                <form action="admin.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="name">
+                    <label for="description">description</label>
+                    <textarea name="description" id="description" rows="8" cols="50"
+                        placeholder="optional description"></textarea>
+                    <label for="image">Image</label>
+                    <input type="text" name="image" id="image" placeholder="filepath" required>
+                    <label for="price">Price</label>
+                    <input type="number" name="price" id="price" placeholder="price (SEK)" min="0" required>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" placeholder="quantity" min="0" required>
+                    <select name="category" id="category">
+                        <!--category-->
+                        <option value="CATEGORYNAME">CATEGORYNAME</option>
+                        <!--category-->
+                    </select>
+                    <button type="submit">Add new item</button>
+                </form>
+                <p><!--additemfeedback--></p>
+            </section>
+            <hr>
+            <section>
+                <h1>Remove Item</h1>
+                <form action="admin.php" method="post">
+                    <label for="removeitem">Item ID</label>
+                    <input type="number" name="removeitem" id="removeitem" min="1">
+                    <button type="submit">Remove Item</button>
+                </form>
+                <p><!--removefeedback--></p>
+            </section>
+
+
+            <hr>
+            <section id="logoutcontainer">
+                <a href="logout.php">Log out</a>
+            </section>
+        </main>
+    </div>
+</body>

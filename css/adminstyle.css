@@ -1,0 +1,88 @@
+input,
+textarea,
+label,
+button,
+select {
+  margin: auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+label {
+  text-align: center;
+}
+
+h1 {
+  font-size: 22pt;
+  text-decoration: underline;
+}
+
+main {
+  grid-column: 1/3;
+}
+
+input,
+select {
+  color: white;
+  width: 200px;
+  height: 25px;
+  background-color: #535659;
+}
+
+textarea {
+  color: white;
+  background-color: #535659;
+  resize: none;
+}
+
+p,
+a {
+  text-align: center;
+}
+
+#title {
+  font-size: 32pt;
+  background-color: #292826;
+}
+
+hr {
+  width: 60%;
+  margin-top: 100px;
+}
+
+.sales {
+  font-size: 18pt;
+}
+
+main {
+  box-shadow: 1px 5px 3px 3px #151616;
+}
+
+.success {
+  color: lightgreen;
+}
+
+.error {
+  color: red;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #535659;
+  color: white;
+  border-radius: 5px;
+}
+
+#logoutcontainer a {
+  font-size: 16pt;
+  background-color: red;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+#logoutcontainer {
+  display: flex;
+  justify-content: center;
+}

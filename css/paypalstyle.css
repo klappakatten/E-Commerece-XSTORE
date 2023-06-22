@@ -1,0 +1,28 @@
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+h1 {
+  padding-top: 100px;
+  text-decoration: underline;
+}
+
+p {
+  display: block;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: normal;
+  font-size: 13pt;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 150px;
+}
+
+span {
+  color: lightgreen;
+}
