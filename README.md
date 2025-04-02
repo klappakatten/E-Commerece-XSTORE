@@ -8,3 +8,12 @@ For Testing Purposes:
 Admin login:
 Username = administrator@admin.com
 Password =  Password123!
+
+Database has to be connected or the site will display a error page:
+
+Run SQL Server & assign these variables in connectdb.php:
+
+$server = "";
+$username = "";
+$password = "";
+$db = "";
